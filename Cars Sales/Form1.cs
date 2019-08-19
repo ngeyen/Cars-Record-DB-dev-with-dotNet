@@ -41,7 +41,9 @@ namespace Cars_Sales
             Make.Text = dataR.ItemArray.GetValue(1).ToString();
             Model.Text = dataR.ItemArray.GetValue(2).ToString();
             Price.Text = dataR.ItemArray.GetValue(3).ToString();
+            tr_Connection.Close();
         }
+
 
         private void Label1_Click(object sender, EventArgs e)
         {
@@ -69,6 +71,11 @@ namespace Cars_Sales
         }
 
         private void TextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Make_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

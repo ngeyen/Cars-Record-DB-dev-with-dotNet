@@ -42,6 +42,9 @@
             // 
             // modelLabel
             // 
+            this.modelLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.modelLabel.AutoSize = true;
             this.modelLabel.BackColor = System.Drawing.Color.Transparent;
             this.modelLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight;
@@ -54,6 +57,9 @@
             // 
             // carNoLabel
             // 
+            this.carNoLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.carNoLabel.AutoSize = true;
             this.carNoLabel.BackColor = System.Drawing.Color.Transparent;
             this.carNoLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight;
@@ -66,6 +72,9 @@
             // 
             // makeLabel
             // 
+            this.makeLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.makeLabel.AutoSize = true;
             this.makeLabel.BackColor = System.Drawing.Color.Transparent;
             this.makeLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight;
@@ -78,6 +87,9 @@
             // 
             // priceLabel
             // 
+            this.priceLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.priceLabel.AutoSize = true;
             this.priceLabel.BackColor = System.Drawing.Color.Transparent;
             this.priceLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight;
@@ -90,17 +102,19 @@
             // 
             // CarID
             // 
+            this.CarID.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.CarID.BackColor = System.Drawing.SystemColors.Window;
             this.CarID.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.CarID.Location = new System.Drawing.Point(210, 147);
             this.CarID.Multiline = true;
             this.CarID.Name = "CarID";
-            this.CarID.Size = new System.Drawing.Size(316, 30);
+            this.CarID.Size = new System.Drawing.Size(316, 28);
             this.CarID.TabIndex = 1;
             this.CarID.TextChanged += new System.EventHandler(this.TextBox1_TextChanged);
             // 
             // Price
             // 
+            this.Price.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.Price.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Price.Location = new System.Drawing.Point(210, 316);
             this.Price.Multiline = true;
@@ -110,6 +124,7 @@
             // 
             // Model
             // 
+            this.Model.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.Model.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Model.Location = new System.Drawing.Point(210, 257);
             this.Model.Multiline = true;
@@ -120,11 +135,13 @@
             // 
             // SaveCarSales
             // 
-            this.SaveCarSales.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.SaveCarSales.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.SaveCarSales.Location = new System.Drawing.Point(286, 377);
+            this.SaveCarSales.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.SaveCarSales.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.SaveCarSales.BackgroundImage = global::Cars_Sales.Properties.Resources.bgimg2;
+            this.SaveCarSales.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SaveCarSales.Location = new System.Drawing.Point(273, 380);
             this.SaveCarSales.Name = "SaveCarSales";
-            this.SaveCarSales.Size = new System.Drawing.Size(107, 34);
+            this.SaveCarSales.Size = new System.Drawing.Size(143, 34);
             this.SaveCarSales.TabIndex = 2;
             this.SaveCarSales.Text = "Save";
             this.SaveCarSales.UseVisualStyleBackColor = false;
@@ -149,12 +166,14 @@
             // 
             // Make
             // 
+            this.Make.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.Make.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Make.FormattingEnabled = true;
             this.Make.Location = new System.Drawing.Point(210, 206);
             this.Make.Name = "Make";
             this.Make.Size = new System.Drawing.Size(316, 21);
             this.Make.TabIndex = 4;
+            this.Make.SelectedIndexChanged += new System.EventHandler(this.Make_SelectedIndexChanged);
             // 
             // FormRecordCars
             // 
@@ -163,7 +182,7 @@
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.BackgroundImage = global::Cars_Sales.Properties.Resources.bgimg2;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(710, 455);
+            this.ClientSize = new System.Drawing.Size(726, 455);
             this.Controls.Add(this.Make);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.SaveCarSales);
